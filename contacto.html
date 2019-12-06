@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+
+
+<!--  -->
+<head>
+
+	<title>
+		The Wild | La Mayor Reserva del Mundo
+	</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png"/>
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Free Web tutorials"/>
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript"/>
+	<meta name="author" content="John Doe"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link REL=StyleSheet HREF="css/normalize.css" TYPE="text/css"/>
+	<link REL=StyleSheet HREF="css/main.css" TYPE="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	
+</head>
+
+
+<body onload="presentacionInicio()">
+	<div id="main">
+		<img src="" alt="" id="Desplegador" class="" onclick="cerrarDesplegable(this)">
+		<header>
+			<div><a href="index.html#inicio"><h1>The Wild</h1></a></div>
+			<nav class="menu">
+				<ul class="nav">
+					<li class="menuGlobal"><a href="contacto.html">Contacto</a></li>
+					<li class="menuGlobal"><a href="categorias.html">Categorías</a>
+						<ul>
+							<a href="categorias.html#mamiferos"><li class="subMenu">Mamíferos</li></a>
+							<a href="categorias.html#reptiles"><li class="subMenu">Reptiles</li></a>
+							<a href="categorias.html#aves"><li class="subMenu">Aves</li></a>
+							<a href="categorias.html#marinos"><li class="subMenu">Animales marinos</li></a>
+							<a href="categorias.html#anfibios"><li class="subMenu">Anfibios</li></a>
+							<a href="categorias.html#insectos"><li class="subMenu">Insectos</li></a>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="contenido">
+			<a name="contacto"></a>
+			<article class="contacto">
+				<h2>Contacto</h2>
+
+
+
+				<div class="presentacion">
+
+				<!-- 3 ventanas, normal, premium, contacto -->
+
+				
+
+					<form action="#" id="entradaNormal" class="tipoContacto" onclick="seleccionarContacto(this)">
+						<h3 id="normalTitulo">Entrada Básica</h3>
+						<div><label for="nom"><p>Nombre Completo *</p></label><input type="text" required id="nom" placeholder="¿Cómo te llamas?"></div>
+						<div><label for="ema"><p>Email *</p></label><input type="email" required id="ema"placeholder="¿Cuál es tu Email?"></div>
+						<div><label for="tel"><p>Teléfono *</p></label><input type="tele" required id="tel" placeholder="¿Cuál es tu teléfono?"></div>
+
+						<div>
+							<label for="rangoNormal"><p>Nº de Días *: <span id="diasSeleccionadosNormal"> 7</span></p>
+								
+							</label>
+							<div id="rangoyNumeros">1<input type="range" required id="rangoNormal" class="slider" min="1" max="14" value="7" onchange="diasReserva(this)">14</div>
+						</div>
+
+						<div><label for="ent"><p>Fecha de entrada *</p></label><input type="date" id="ent"></div>
+						<div class="divBoton"><input class="boton" type="submit" value="Comprar Entrada Básica" required id="comNormal"></div>
+					</form>
+
+					<form action="#" id="entradaPremium" class="tipoContacto" onclick="seleccionarContacto(this)">
+						<h3 id="premiumTitulo" >Entrada PREMIUM</h3>
+						<div><label for="nomPrem"><p>Nombre Completo *</p></label><input type="text" required id="nomPrem" autofocus placeholder="¿Cómo te llamas?"></div>
+						<div><label for="emaPrem"><p>Email *</p></label><input type="email" required id="emaPrem"placeholder="¿Cuál es tu Email?"></div>
+						<div><label for="telPrem"><p>Teléfono *</p></label><input type="tele" required id="telPrem" placeholder="¿Cuál es tu teléfono?"></div>
+
+						<div>
+							<label for="rangoPremium"><p>Nº de Días *: <span id="diasSeleccionadosPremium"> 7</span></p>
+								
+							</label>
+							<div id="rangoyNumeros">1<input type="range" required id="rangoPremium" class="slider" min="1" max="14" value="7" onchange="diasReserva(this)">14</div>
+						</div>
+
+						<div><label for="entPrem"><p>Fecha de entrada *</p></label><input type="date" required id="entPrem"></div>
+						<div class="divBoton"><input class="boton" type="submit" value="Comprar Entrada Premium" id="comPremium"></div>
+					</form>
+
+
+					<form action="#" id="informacion" class="tipoContacto" onclick="seleccionarContacto(this)">
+						<h3 id="info">Información</h3>
+						<div><label for="nomInfo"><p>Nombre Completo *</p></label><input type="text" required id="nomInfo" placeholder="¿Cómo te llamas?"></div>
+						<div><label for="emaInfo"><p>Email *</p></label><input type="text" required id="emaInfo"placeholder="¿Cuál es tu Email?"></div>
+						<div><label for="comentInfo"><p>Comentario, duda o sugerencia *</p></label><textarea name="" required id="comentInfo" cols="30" rows="10" placeholder="Escribe aquí tu comentario"></textarea></div>
+						<div class="divBoton"><input class="boton" type="submit" value="Solicitar Información Gratuita" id="solInfo"></div>
+					</form>
+
+				</div>
+					
+			</article>
+			<footer>
+				<a name="pie"></a>
+				<div class="rrss">
+					<a href="https://www.instagram.com/?hl=es"><img src="images/ig.svg" alt="Icono y enlace a la página de Instagram de The Wild" class="redes"></a>
+					<a href="https://www.facebook.com/"><img src="images/fb.svg" alt="Icono y enlace a la página de Facebook de The Wild" class="redes"></a>
+					<a href="https://twitter.com/?lang=es"><img src="images/tw.svg" alt="Icono y enlace a la página de Twitter de The Wild" class="redes"></a>
+				</div>
+				<div class="tradeMark">
+					<h3>The Wild &#169 | By <a href="http://julencasindesign.000webhostapp.com/portfolio/" target="_blank">Julen Castillo</a></h3>
+				</div>
+				<div class="contactoFooter">
+					<h3>Teléfono: +34 658 84 05 13</h3>
+					<h3>Email: thewild@natural.com</h3>
+					<h3><a href="contacto.html">Reservar</a></h3>
+				</div>
+			</footer>
+			
+		</div>
+	</div>
+			<!-- <a href="#seccion2"><img src="images/arrowDownPastel.svg" class="bajar" alt="Flecha para bajar a la siguiente seccion"></a> -->
+
+
+
+
+
+	<script type="text/javascript" src="js/javascript.js"></script>
+</body>
+</html>

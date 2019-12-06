@@ -1,0 +1,434 @@
+
+
+
+
+
+
+html{scroll-behavior: smooth;}
+/* Ancho */::-webkit-scrollbar {width: 7px;height: 7px;}
+/* Pista */::-webkit-scrollbar-track {background: #e3c498; }
+/* Barrita */::-webkit-scrollbar-thumb {background: black; }
+/* Barrita hover */ ::-webkit-scrollbar-thumb:hover {background: white; }
+
+
+/* COLORES: GRIS #353535;
+			BEIGE #d2b387; */
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+body{
+	overflow-x: hidden;
+}
+#main{
+	font-family: 'Raleway', sans-serif;
+	width: 100vw;
+	min-height: 900px;
+	color: #d2b387;
+	position: relative;
+}
+header{
+	width: 100vw;
+	height: 80px;
+	background-color: rgb(18, 18, 18);
+	padding-top: 5px;
+	position: fixed;
+	z-index: 3;
+	top: 0px;
+	transition: .2s;
+}header:hover{
+	box-shadow: 0px 0px 10px black;
+}.menu{
+	margin-right: 60px;
+}
+.menu ul, .menu li{
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+h1{
+	float: left;
+	line-height: 20px;
+	font-size: 40px;
+	margin-left: 150px;
+	transition: .3s; 
+}h1:hover{
+	color: #e6cd8a;
+	text-shadow: 0px 0px 20px rgba(230,205,138, 1);
+}
+header ul{
+	list-style: none;
+}
+.menuGlobal{
+	font-size: 24px;
+	line-height: 80px;
+}
+.menuGlobal:hover .subMenu{
+	height: 50px;
+	border-bottom: 1px solid #d2b387;
+}
+.subMenu{
+	font-weight: lighter;
+	line-height: 50px;
+	font-size: 20px;
+	height: 0px;
+	overflow: hidden;
+	transition: .5s;
+	background-color: rgba(18, 18, 18, .85);
+}.subMenu:hover{
+	filter: invert(100%);
+}
+.menu li{
+	width: 150px;
+}
+header > ul{
+	float: right;
+}
+.nav > li{
+	float: right;
+}
+
+
+
+
+/* CONTENIDO */
+
+.contenido{
+	width: 100%;
+	min-height: 900px;
+	float: left;
+}
+article{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}.desplegable{
+	position: fixed;
+	height: 80%;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	z-index: 10;
+	box-shadow: 0px 0px 100px black;
+}.desplegable:hover{
+	cursor: pointer;
+}
+
+/*PRIMERA SECCION*/
+.inicio{
+	background-color: #353535;
+}.inicio  img{
+	height: 350px;
+}h2{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 125px;
+	margin-bottom: 75px;
+}.bajar{
+	width: 100px;
+	margin-top: -50px;
+}.presentacion{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0px 100px;
+}.textoInicio{
+	padding-left: 100px;
+	font-size: 15px;
+}.textoInicio h3{
+	margin-bottom: 40px;
+}#indice1{
+	display: none;
+	opacity: 0;
+	transition: .5s;
+}#indice2{
+	display: none;
+	opacity: 0;
+	transition: .5s;
+}#indice3{
+	display: none;
+	opacity: 0;
+	transition: .5s;
+}#indice4{
+	display: none;
+	opacity: 0;
+	transition: .5s;
+}#indice5{
+	display: none;
+	opacity: 0;
+	transition: .5s;
+}
+
+/*SEGUNDA SECCION*/
+.seccionEventos{
+	background-color: #353535;
+}.evento{
+	height: 375px;
+	width: 300px;
+	margin: 0px 30px;
+	font-size: 16px;
+	position: relative;
+}.tituloEvento{
+	background-color: #d2b387;
+	color: #353535;
+	text-align: center;
+	padding: 10px;
+}.evento p{
+	padding: 0px 10px;
+}.evento img{
+	width: 300px;
+	position: absolute;
+	bottom: 0px;
+	transition: .4s;
+}.evento img:hover{
+	filter: contrast(130%) saturate(125%);
+	cursor: pointer;
+}.seccionEventos .bajar{
+	margin-top: 50px;
+}
+
+/*TERCERA SECCION*/
+.aboutUs{
+	background-color: #d2b387;
+	color: #353535;
+}.aboutUs p{
+	width: 650px;
+	padding-left: 35px;
+}.aboutUs a{
+	text-decoration: underline;
+}.aboutUs .presentacion img{
+	width: 400px;
+	border-radius: 25px;
+	transition: .5s;
+}.aboutUs .presentacion img:hover{
+	filter: contrast(130%) saturate(125%);
+	border-radius: 0px;
+	cursor: pointer;
+}.aboutUs .bajar{
+	margin-top: 125px;
+}
+
+
+
+
+
+
+
+
+
+
+/* CATEGORÍAS */
+
+.textoCategoria{
+	width: 60%;
+	margin-top:-40px;
+	font-size: 22px;
+}.categoria img{
+	height: 200px;
+	transition: .3s;
+}.categoria img:hover{
+	filter: saturate(120%) contrast(120%);
+	cursor: pointer;
+}.categoria .presentacion{
+	width: 100vw;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+
+
+
+/* Mamíferos */
+.mamiferos{
+	background-color: #353535;
+}
+
+/* Reptiles */
+.reptiles{
+	background-color: #d2b387;
+	color: #353535;
+}
+
+/* Aves */
+.aves{
+	background-color: #353535;
+}
+
+/* Marinos */
+.marinos{
+	background-color: #d2b387;
+	color: #353535;
+}
+/* Insectos */
+.insectos{
+	background-color: #d2b387;
+	color: #353535;
+}
+
+
+
+
+
+/* CONTACTO */
+.contacto{
+	background-color: #353535;
+}.contacto .presentacion{
+	width: 80vw;
+}.contacto h2{
+	margin-bottom: 50px;
+}#entradaPremium{
+	transform: scale(1.05);
+}#premiumTitulo{
+	color: goldenrod;
+	text-shadow: 0px 0px 20px rgba(230,205,138, 1);
+}h3{
+	text-align: center;
+	transition: .3s;
+}.contacto h3:hover{
+	cursor: pointer;
+}.tiposContacto{
+	display: flex;
+	width: 80%;
+	justify-content: space-evenly;
+}form{
+	display: flex;
+	padding-left: 15px;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 560px;
+	width: 300px;
+	border: 1px solid white;
+	transition: .3s;
+	transition-delay: .2
+}form h4{
+	margin: 10px;
+}input{
+	height: 23px;
+	background-color: #353535;
+	color: #dfdfdf;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #bbb;
+}input:focus{
+	border-bottom: 1px solid #fff;
+}form label:hover{
+	cursor: pointer;	
+}input::placeholder{
+	color: #afafaf;
+}textarea{
+	background-color: #353535;
+	color: #dfdfdf;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #bbb;
+}textarea:focus{
+	border-bottom: 1px solid #fff;
+}
+textarea::placeholder{
+	color: #afafaf;
+}.boton{
+	margin-left: 0px;
+	margin-bottom: 20px;
+	padding: 3px 20px;
+	border: none;
+	border-radius: 2px;
+	height: 25px;
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	transition: .1s, .3s;
+	transition-property: transform, box-shadow;
+	transition-delay: 0s, .4s;
+}.boton:hover{
+	cursor: pointer;
+}.boton:active{
+	transform: scale(.95);
+}.divBoton{
+	margin-top: 30px;
+	text-align: center;
+}#comPremium{
+	box-shadow: 0px 0px 10px rgba(230,205,138, 1);
+}
+
+
+
+
+
+/* RANGO DE DÍAS */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 65%;
+  height: 3px; 
+  background: #fff;
+  outline: none;
+  border-radius: 2px;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #d2b387;
+  cursor: pointer;
+}.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #d2b387;
+  cursor: pointer;
+}
+#rangoyNumeros{
+	margin-left: 20px;
+	margin-bottom: 10px;
+}#rangoyNumeros input{
+	margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+footer{
+	width: 100vw;
+	height: 125px;
+	background-color: rgb(18, 18, 18);
+	color: rgb(100, 100, 100);
+	float: left;
+	display: flex;
+	justify-content: space-evenly;
+}.rrss{
+	width: 33vw;
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 40px;
+}.redes{
+	width: 35px;
+}.tradeMark{
+	width: 33vw;
+	text-align: center;
+	line-height: 80px;
+}.contactoFooter{
+	width: 33vw;
+	line-height: 15px;
+}.contactoFooter a{
+	color: #d2b387;
+}
